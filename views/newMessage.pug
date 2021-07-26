@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body.bg-gray-100
+    header.container.m-auto.flex.pt-5.justify-center
+      - const classH1 = ["text-4xl", "text-blue-800", "font-bold", "w-full"]
+      h1.fH(class=classH1) Mini Message Board
+      - const classA = ["underline", "text-blue-500", "w-full", "text-base", "font-thin", "flex", "justify-end", "items-center", "hover:text-blue-700"]
+      a.fA(class=classA href="/") Back
+    - const classForm = ["flex", "container", "justify-center", "items-center", "flex-col", "m-auto", "p-8"]
+    form.fF(action="/new" method="POST" class=classForm)
+      - const classINM = ["p-2", "mb-2", "rounded-md", "min-w-max", "max-w-xl", "w-full", "shadow"]
+      input.fI(id="name" name="name" type="text" placeholder="Your Name" class=classINM)
+      input.fM(id="message" name="message" type="text" placeholder="Here goes your message" class=classINM)
+      - const classIS = ["mt-2", "p-2", "min-w-max", "max-w-xs", "w-full", "shadow", "rounded-md", "bg-blue-500", "hover:bg-blue-600", "text-white"]
+      input.fS(id="submit" type="submit" value="Submit" class=classIS)
