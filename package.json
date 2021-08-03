@@ -15,12 +15,10 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
-    "mongoose": "^5.13.3"
-  },
-  "devDependencies": {
+    "mongoose": "^5.13.3",
     "moment": "^2.29.1",
     "nodemon": "^2.0.12",
     "tailwindcss": "^2.2.7"
   },
-  "engines": { "node":"v14.17.3" } 
+  "engines": { "node":"14.17.3" } 
 }

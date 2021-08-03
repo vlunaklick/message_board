@@ -1,18 +1,18 @@
 const moment = require('moment')
 
-let val1 = moment().startOf('day').fromNow()
-let val2 = moment().startOf('week').fromNow()
+let val1 = moment().subtract(1, 'days')
+let val2 = moment().subtract(7, 'days')
 
 const messages = [
 	{
 		text: 'Hi there!',
 		user: 'Amando',
-		added: val1,
+		added: moment(val1).fromNow(),
 	},
 	{
 		text: 'Hello World!',
 		user: 'Charles',
-		added: val2,
+		added: moment(val2).fromNow(),
 	},
 ]
 

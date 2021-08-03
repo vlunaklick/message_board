@@ -10,12 +10,11 @@ router.get('/', function (req, res, next) {
 
 router.post('/', (req, res, next) => {
 	let { name, message } = req.body
+	let date = new Date()
 	messages.unshift({
 		text: message,
 		user: name,
-		added: moment()
-			.startOf('hour' - 1)
-			.fromNow(),
+		added: moment(date).fromNow(),
 	})
 	res.redirect('/')
 })
