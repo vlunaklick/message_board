@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> In this post you can see a "Mini Message Board" where I used Express, Pug, TailwindCSS and Heroku for deployment.
+> In this post you can see a "Mini Message Board" where you send messages and it works as a timeline. I used Express, Pug, TailwindCSS and Heroku for deployment.
 
 ### ✨ [Live View](https://minimessagevalen.herokuapp.com)
 
