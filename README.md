@@ -5,7 +5,7 @@
 
 > In this post you can see a "Mini Message Board" where I used Express, Pug, TailwindCSS and Heroku for deployment.
 
-### ✨ [Live View](https://basicinformationnode.vlunaklick.repl.co/about)
+### ✨ [Live View](https://minimessagevalen.herokuapp.com)
 
 ## Author
 
