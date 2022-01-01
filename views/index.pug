@@ -3,6 +3,7 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   - const classBody = ["bg-gray-100","p-3.5"]
   body(class=classBody)
     header.container.m-auto.flex.pt-5.justify-center
@@ -17,9 +18,9 @@ html
         div(class=classDiv)
           - const classInside = ["flex","items-center"]
           div(class=classInside)
-            - const classHUser = ["text-base","font-bold","w-full","capitalize","mb-2"]
+            - const classHUser = ["text-base","font-bold","w-full","capitalize"]
               h3(class=classHUser)
-                span.underline User:
+                span
                 |  #{message.user}
             - const classHDate = ["text-xs","font-thin","flex","justify-end","text-gray-400","w-full"]
             h5(class=classHDate)= message.added
